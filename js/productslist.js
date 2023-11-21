@@ -2,7 +2,7 @@
 **********************************************/
 
 const produitSell = "cameras"  //Au choix entre : "cameras" - "furniture" - "teddies"
-const apiUrl = "https://oc-p5-api.herokuapp.com/api/" + produitSell + "/";
+const apiUrl = "http://212.227.6.189/JWDP5-master/" + produitSell + "/";
 
 //id du produit pour permettre un tri dans l'API
 
