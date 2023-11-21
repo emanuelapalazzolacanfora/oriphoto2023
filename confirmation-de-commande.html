@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+		<title>Confirmation de commande OriPhoto</title>
+		<meta name="description" content="Confirmation de commande d'appareil photo vintage chez OriPhoto">
+
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://kit.fontawesome.com/9376b337f5.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="bgc">
+			<nav class="flexbox">
+				<ul>
+					<li class="logo__header">
+						<a href="index.html" class="h1 focus">
+							<h1>
+								<img class="logo" src="img/oriphoto-logo.png" alt="Logo d'Oriphoto"/>riPhoto
+							</h1>
+						</a>
+					</li>
+					<li>
+						<a href="index.html" class="focus">Accueil<i class="fas fa-caret-right"></i></a>
+					</li>
+					<li class="panier">
+						<a href="mon-panier.html" class="focus">Panier<i class="fas fa-shopping-cart"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2 class="principal bgc conteneur__demie">Commande validée</h2>
+			<div id="confirmationdecommande"class="conteneur__bleu conteneur__demie">
+				<article id="confirmation">
+                    <p>Merci pour votre commande <span class="user"></span></p>
+                    
+                    <p>Son montant s'élève à un total de <span class="price"></span>€</p>
+
+					<p>Nous l'avons reçu et la traiterons dans les plus brefs délais.</p>
+
+					<p>Votre numéro de commande est le <span class="order-id"></span></p>
+				  </article>
+			</div>
+			<button class="btn btn__achat bgc majuscule focus"id="retourneralaccueil" onclick="window.location.href='index.html';"><i class="fas fa-caret-left"></i>retourner à l'accueil</button>
+		</main>
+		<footer  class="bgc">
+			<div class="flexbox">
+				<div>
+					<a href="index.html" title="Lien vers Twitter"><i class="fa fa-twitter icon-social"></i></a>
+				</div>
+				<div>
+					<a href="index.html" title="Lien vers Facebook"><i class="fa fa-facebook icon-social"></i></a>
+				</div>
+				<div>
+					<a href="index.html" title="Lien vers Instagram"><i class="fa fa-instagram icon-social"></i></a>
+				</div>
+			</div>
+		</footer> 
+
+
+		<!-- Scripts JS -->
+		<script src="js/confirmationcommande.js"></script>
+		
+    </body>
+</html>

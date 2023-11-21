@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="shortcut icon" type="image/png" href="img/oriphoto-favicon.png">
+	<title>Mon panier sur OriPhoto</title>
+	<meta name="description" content="Votre panier sur OriPhoto">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/9376b337f5.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+	<body>
+		<header class="bgc">
+			<nav class="flexbox">
+				<ul>
+					<li class="logo__header">
+						<a href="index.html" class="h1 focus">
+							<h1>
+								<img class="logo" src="img/oriphoto-logo.png" alt="Logo d'Oriphoto"/>riPhoto
+							</h1>
+						</a>
+					</li>
+					<li>
+						<a href="index.html" class="focus">Accueil<i class="fas fa-caret-right"></i></a>
+					</li>
+					<li class="panier">
+						<a href="mon-panier.html" class="focus">Panier<i class="fas fa-shopping-cart"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2 class="principal bgc">mon panier</h2>
+			<button class="btn btn__achat bgc majuscule focus" id="retourneralaccueil" onclick="window.location.href='index.html';"><i class="fas fa-caret-left"></i>retourner à l'accueil</button>
+			<section id="panier">
+			<h3 id="panier-total"></h3>
+			</section>
+			<section class="conteneur__demie">
+				<form method="post" name="formulairedecommande">
+					<h3 > Formulaire de commande :</h3>
+					<div class="souspartie">
+						<div>
+							<label for="nomclient">Nom *</label>
+							<input type="text" placeholder="Votre nom" id="nomclient"  pattern="^\D*$" required name="nomclient" class="focus"><br/>
+						</div>
+						<div>
+							<label for="prenomclient">Prénom *</label>
+							<input type="text" placeholder="Votre prénom" id="prenomclient"  pattern="^\D*$" required name="prenomclient" class="focus">
+						</div>
+					</div>
+					<div class="souspartie">
+						<div>
+							<label for="emailclient">Email *</label>
+							<input type="email" placeholder="Votre email" id="emailclient" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required name="emailclient" class="focus">
+						</div>
+					</div>
+					<div class="souspartie">
+						<div>
+							<label for="adresseclient">Adresse *</label>
+							<input type="text" placeholder="Votre adresse postale" id="adresseclient" class="address focus" required name="adresseclient"><br/>
+						</div>
+						<div>
+							<label for="villeclient">Ville *</label>
+							<input type="text" placeholder="Votre ville" id="villeclient"  required name="villeclient" class="focus">
+						</div>
+					</div>
+					<button type="submit" id="envoiformulaire" class="focus">Valider la commande</button>
+					<button type="reset" class="focus">Effacer</button>
+				</form>
+			</section>
+		</main>
+		<footer  class="bgc">
+			<div class="flexbox">
+				<div>
+					<a href="index.html" title="Lien vers Twitter"><i class="fa fa-twitter icon-social"></i></a>
+				</div>
+				<div>
+					<a href="index.html" title="Lien vers Facebook"><i class="fa fa-facebook icon-social"></i></a>
+				</div>
+				<div>
+					<a href="index.html" title="Lien vers Instagram"><i class="fa fa-instagram icon-social"></i></a>
+				</div>
+			</div>
+		</footer> 
+
+
+		<!-- Scripts JS -->
+		<script src="js/ajax.js"></script>
+
+	
+		<script src="js/panier.js"></script>
+	</body>
+</html>
